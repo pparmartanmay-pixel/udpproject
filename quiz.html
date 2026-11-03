@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuizFuzion | Quiz</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #f4f6f9;
+    color: #263445;
+    line-height: 1.65;
+}
+
+.site-header {
+    height: 82px;
+    background: #14263d;
+    border-bottom: 3px solid #18a999;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 18px rgba(20, 38, 61, 0.10);
+}
+
+.brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+.brand span {
+    color: #35c6b1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #e6edf5;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav a:hover{
+    color: #49d6c1;
+}
+
+h1 {
+    color: #14263d;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+}
+
+.button{
+    display: inline-block;
+    padding: 13px 25px;
+    border: 0;
+    border-radius: 6px;
+    background: #138b80;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(19, 139, 128, 0.18);
+}
+
+.button:hover{
+    background: #0e746b;
+}
+
+.container {
+    width: 1040px;
+    margin: 54px auto;
+    padding: 42px 48px;
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(20, 38, 61, 0.07);
+}
+
+.container h1 {
+    font-size: 34px;
+    margin-bottom: 24px;
+}
+
+.container h2 {
+    color: #14263d;
+    margin-bottom: 12px;
+}
+
+.container p {
+    color: #58697c;
+    font-size: 16px;
+}
+
+.section-label {
+    color: #138b80;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.instruction-list {
+    margin: 18px 0 28px;
+    padding-left: 24px;
+    color: #46576a;
+}
+
+.instruction-list li {
+    padding: 8px 0 8px 5px;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.instruction-list li{
+    color: #138b80;
+    font-weight: 800;
+}
+
+.question {
+    padding: 22px 24px;
+    margin-bottom: 18px;
+    background: #fbfcfe;
+    border: 1px solid #e1e7ee;
+    border-left: 4px solid #138b80;
+    border-radius: 8px;
+    color: #46576a;
+}
+
+.question p {
+    color: #172b43;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.question label {
+    display: block;
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+.submit-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.result {
+    width: 900px;
+    margin: 70px auto;
+    padding: 65px 50px;
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    border-top: 5px solid #138b80;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 12px 32px rgba(20, 38, 61, 0.07);
+}
+
+.result h1 {
+    color: #138b80;
+    font-size: 36px;
+}
+
+.result h2 {
+    color: #14263d;
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.result p {
+    color: #58697c;
+}
+
+.footer {
+    margin-top: 65px;
+    padding: 22px;
+    text-align: center;
+    color: #718096;
+    font-size: 13px;
+    border-top: 1px solid #dfe6ee;
+}
+
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="home.html">Quiz<span>Fuzion</span></a>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a class="" href="home.html">Home</a></li>
+            <li><a class="" href="instruction.html">Instructions</a></li>
+            <li><a class="" href="quiz.html">Quiz</a></li>
+            <li><a class="" href="result.html">Result</a></li>
+            <li><a class="" href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="section-label">Put your knowledge to the test</div>
+    <h1>Quiz Questions</h1>
+    <form action="result.html" method="get">
+    <section class="question">
+        <p>1. What does HTML stand for?</p>
+            <label><input type="radio" name="q1" value="1"> Hyper Text Markup Language</label>
+            <label><input type="radio" name="q1" value="2"> Hyper Tool Markup Language</label>
+            <label><input type="radio" name="q1" value="3"> High Text Markup Language</label>
+    </section>
+    <section class="question">
+        <p>2. Which CSS property changes text color?</p>
+            <label><input type="radio" name="q2" value="1"> color</label>
+            <label><input type="radio" name="q2" value="2"> bgcolor</label>
+            <label><input type="radio" name="q2" value="3"> text-style</label>
+    </section>
+    <section class="question">
+        <p>3. Which tag is used to create a hyperlink in HTML?</p>
+            <label><input type="radio" name="q3" value="1"> &lt;a&gt;</label>
+            <label><input type="radio" name="q3" value="2"> &lt;link&gt;</label>
+            <label><input type="radio" name="q3" value="3"> &lt;href&gt;</label>
+    </section>
+    <section class="question">
+        <p>4. Which HTML tag is used for the largest heading?</p>
+            <label><input type="radio" name="q4" value="1"> &lt;h6&gt;</label>
+            <label><input type="radio" name="q4" value="2"> &lt;h1&gt;</label>
+            <label><input type="radio" name="q4" value="3"> &lt;head&gt;</label>
+    </section>
+    <section class="question">
+        <p>5. Which CSS property is used to change background color?</p>
+            <label><input type="radio" name="q5" value="1"> bgcolor</label>
+            <label><input type="radio" name="q5" value="2"> background-color</label>
+            <label><input type="radio" name="q5" value="3"> color</label>
+    </section>
+    <section class="question">
+        <p>6. Which tag is used to insert an image in HTML?</p>
+            <label><input type="radio" name="q6" value="1"> &lt;image&gt;</label>
+            <label><input type="radio" name="q6" value="2"> &lt;img&gt;</label>
+            <label><input type="radio" name="q6" value="3"> &lt;pic&gt;</label>
+    </section>
+    <section class="question">
+        <p>7. What does CSS stand for?</p>
+            <label><input type="radio" name="q7" value="1"> Computer Style Sheets</label>
+            <label><input type="radio" name="q7" value="2"> Creative Style System</label>
+            <label><input type="radio" name="q7" value="3"> Cascading Style Sheets</label>
+    </section>
+    <section class="question">
+        <p>8. Which HTML tag is used to create a line break?</p>
+            <label><input type="radio" name="q8" value="1"> &lt;br&gt;</label>
+            <label><input type="radio" name="q8" value="2"> &lt;lb&gt;</label>
+            <label><input type="radio" name="q8" value="3"> &lt;break&gt;</label>
+    </section>
+    <section class="question">
+        <p>9. Which CSS property is used to change text size?</p>
+            <label><input type="radio" name="q9" value="1"> text-size</label>
+            <label><input type="radio" name="q9" value="2"> font-size</label>
+            <label><input type="radio" name="q9" value="3"> size</label>
+    </section>
+    <section class="question">
+        <p>10. Which HTML tag is used to create an unordered list?</p>
+            <label><input type="radio" name="q10" value="1"> &lt;ol&gt;</label>
+            <label><input type="radio" name="q10" value="2"> &lt;ul&gt;</label>
+            <label><input type="radio" name="q10" value="3"> &lt;li&gt;</label>
+    </section>
+        <div class="submit-btn">
+            <button class="button" type="submit">Submit Quiz</button>
+        </div>
+    </form>
+</main>
+
+<footer class="footer">© QuizFuzion · Learn, practise, improve.</footer>
+</body>
+</html>
